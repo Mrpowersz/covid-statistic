@@ -68,7 +68,6 @@ const FilterComponent: React.FC<FilterProps> = ({ onFilter, onClear, availableCo
         />
       </Box>
 
-      {/* Date Picker */}
       <Box display="flex" flexGrow={1} minWidth={250} gap={2}>
         <Space direction="vertical" size={12}>
           <DatePicker
@@ -90,7 +89,6 @@ const FilterComponent: React.FC<FilterProps> = ({ onFilter, onClear, availableCo
         </Space>
       </Box>
 
-      {/* Filter and Clear */}
       <Box display="flex" flexDirection="column" gap={1} mt={{ xs: 2, sm: 0 }} alignItems="flex-start" sx={{ ml: { sm: -13, xs: 0 } }}>
         <Button variant="contained" color="success" onClick={handleFilter}
         sx={{

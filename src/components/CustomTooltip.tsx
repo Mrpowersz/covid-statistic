@@ -9,7 +9,7 @@ const CustomTooltip: React.FC<TooltipProps<any, any>> = ({ payload, label }) => 
 
     return (
       <div className="custom-tooltip">
-        <p>{format(date, 'MMMM dd, yyyy')}</p> {/* Show full date in tooltip */}
+        <p>{format(date, 'MMMM dd, yyyy')}</p> 
         <p>Cases: {cases}</p>
         <p>Deaths: {deaths}</p>
       </div>

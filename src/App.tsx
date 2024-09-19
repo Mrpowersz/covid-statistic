@@ -218,7 +218,6 @@ const App = () => {
     <Box p={2} display="flex" flexDirection="column" alignItems="center">
       <h1 onClick={handleTitleClick} style={{ cursor: 'pointer' }}>COVID-19 Statistics</h1>
   
-      {/* Filter Component */}
       <Box display="flex" justifyContent="space-between" alignItems="center" width="100%" maxWidth="1200px" mb={2}>
         <FilterComponent
           onFilter={handleFilter}
@@ -226,7 +225,6 @@ const App = () => {
           availableCountries={availableCountries}
         />
   
-        {/*  View Button */}
         <Button
           variant="contained"
           color="success"
@@ -237,26 +235,21 @@ const App = () => {
         </Button>
       </Box>
 
-      {/* Error Message */}
       {errorMessage && (
         <Alert variant="filled" severity="error" sx={{ mb: 2 }}>
         {errorMessage}
         </Alert>
       )}
   
-      {/* Table or Chart */}
       <Box width="100%" maxWidth="1200px">
         {viewMode === 'table' ? (
           <>
-            {/* Table */}
             <TableComponent
               data={paginatedData}
               sortOrder={sortOrder}
               sortBy={sortBy}
               onSortChange={handleSortChange}
             />
-  
-            {/* Pagination */}
             <Box display="flex" justifyContent="center" mt={2}>
               <Pagination
                 shape="rounded"

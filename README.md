@@ -1,4 +1,4 @@
-In order to run the app open terminal.
+In order to run the app, open terminal.
 
 1. npm install
 2. npm install @mui/material @emotion/react @emotion/styled
@@ -7,4 +7,4 @@ In order to run the app open terminal.
 5. npm install recharts
 6. npm install date-fns
 
-To start the app npm start
+To start the app, npm start
